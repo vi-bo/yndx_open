@@ -6,16 +6,17 @@ import dataclasses
 
 from app import models
 
-@dataclasses.dataclass
-class Location:
-    lat: float #vibo: широта
-    lon: float #vibo: долгота
 
 @dataclasses.dataclass
-class Scooter(models.Scooter ):
+class Location:
+    lat: float  # vibo: широта
+    lon: float  # vibo: долгота
+
+
+@dataclasses.dataclass
+class Scooter(models.Scooter):
     address: tp.Optional[str] = None
 
     @classmethod
-    def from_model(cls, scooter: models.Scooter) -> Scooter: 
+    def from_model(cls, scooter: models.Scooter) -> Scooter:
         return cls(id=scooter.id, location=scooter.location, user=scooter.user)
- 

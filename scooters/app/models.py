@@ -7,7 +7,7 @@ import asyncpg
 
 from app import dto
 
-#vibo: делаем модели (данные из БД)
+# vibo: делаем модели (данные из БД)
 @dataclasses.dataclass
 class User:
     id: str
@@ -16,7 +16,8 @@ class User:
     def from_db(cls, user_id: tp.Optional[str]) -> User:
         if user_id:
             return User(id=user_id)
-        return None   
+        return None
+
 
 '''
 #vibo: использование tuple, как и dict - антипаттерн,
@@ -29,6 +30,7 @@ class User:
 #     lat: float #vibo: широта
 #     lon: float #vibo: долгота
 
+
 @dataclasses.dataclass
 class Scooter:
     id: str
@@ -38,10 +40,16 @@ class Scooter:
     # #vibo: не лучшее решение
     # def get_address() -> str:
     #     pass
-    
+
     @classmethod
-    #vibo: пытаемся вернуть в тайпинге объект, который только что объявился,
-    #vibo: добавляем выше import annotations
+    # vibo: пытаемся вернуть в тайпинге объект, который только что объявился,
+    # vibo: добавляем выше import annotations
     def from_db(cls, row: asyncpg.Record) -> Scooter:
-        #vibo: одно метсо, где можно обратиться через индексы, остальное только по имени
-        return cls(id=row['id'], location=dto.Location(lat=row['location'][0], lon=row['location'][1]), user=User.from_db(row['user']))
+        # vibo: одно метсо, где можно обратиться через индексы, остальное только по имени
+        return cls(
+            id=row['id'],
+            location=dto.Location(
+                lat=row['location'][0], lon=row['location'][1]
+            ),
+            user=User.from_db(row['user']),
+        )

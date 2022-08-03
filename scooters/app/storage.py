@@ -1,12 +1,12 @@
-#vibo: делаем функцию, которая будет доставать наши самокаты
+# vibo: делаем функцию, которая будет доставать наши самокаты
 
-#vibo: заведем типы
+# vibo: заведем типы
 import typing as tp
 
-#vibo: импортируем контекст
+# vibo: импортируем контекст
 from app.context import AppContext
 
-#vibo: импортируем модули
+# vibo: импортируем модули
 from app import models
 
 
@@ -17,16 +17,14 @@ from app import models
 То, что связано с базой данных называется моделью
 '''
 
+
 async def get_scooters(context: AppContext) -> tp.List[models.Scooter]:
-    #vibo: пишем код работы с базой данных
+    # vibo: пишем код работы с базой данных
     sql = '''
     select id, location, user from scooters
     '''
     rows = await context.db.fetch(sql)
 
-    #vibo: теперь строки из бд нужно перевести в объекты
+    # vibo: теперь строки из бд нужно перевести в объекты
 
-    return [
-        models.Scooter.from_db(row)
-        for row in rows 
-    ]
+    return [models.Scooter.from_db(row) for row in rows]
