@@ -12,7 +12,7 @@
 
 - **06_[семинар] Python - тестирование** [ссылка на видео](https://www.youtube.com/watch?v=957lkNw-ThE)
 
-- **07_[лекция][семинар] Нагрузочное тестирование - часть1, 2**[ссылка на видео1](https://www.youtube.com/watch?v=rkDaMowYrUM) [ссылка на видео2](https://www.youtube.com/watch?v=rkDaMowYrUM)
+- **07_[лекция][семинар] Нагрузочное тестирование - часть1, 2**[ссылка на видео1](https://www.youtube.com/watch?v=rkDaMowYrUM) [ссылка на видео2](https://www.youtube.com/watch?v=JgJozjJWlUg)
 
 - **08_[семинар] Девопс, деплой, CI/CD - часть1, 2** [ссылка на видео1](https://www.youtube.com/watch?v=5llOsvi7xeM)[ссылка на видео2](https://www.youtube.com/watch?v=5cbvqmDAOZA)
 
