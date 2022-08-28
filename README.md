@@ -18,4 +18,4 @@
 
 - 09_[лекция] Архитектура распределенных систем [ссылка на видео](https://www.youtube.com/watch?v=VoDGD_-d-Sg)
 
-- 10_[семинар]_Python-Дебаг- логирование- профилирование [ссылка на видео](https://www.youtube.com/watch?v=0MEMOQVJZ00)
+- **10_[семинар]_Python-Дебаг- логирование- профилирование** [ссылка на видео](https://www.youtube.com/watch?v=0MEMOQVJZ00)
