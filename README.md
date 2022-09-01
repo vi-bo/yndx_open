@@ -19,3 +19,7 @@
 - **09_[лекция] Архитектура распределенных систем** [ссылка на видео](https://www.youtube.com/watch?v=VoDGD_-d-Sg)
 
 - **10_[семинар] Дебаг-логирование-профилирование** [ссылка на видео](https://www.youtube.com/watch?v=0MEMOQVJZ00)
+
+- 11_[лекция] Код-ревью [ссылка на видео](https://www.youtube.com/watch?v=uM2wiSyhfI8&feature=youtu.be)
+
+- **12_[семинар] Асинхронное программирование - часть1**, часть 2 [ссылка на видео1](https://www.youtube.com/watch?v=rMh5O4eZrug)[ссылка на видео2](https://www.youtube.com/watch?v=rYQk3PW16bE)
